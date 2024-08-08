@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans";
+}
+
+:root {
+  --gray-light-1: #fafafa;
+  --gray-light-2: #e3e4f1;
+  --gray-light-3: #d1d2da;
+  --gray-light-4: #9495a5;
+  --gray-light-5: #494c6b;
+
+  --gray-dark-1: #c8cbe7;
+  --gray-dark-2: #767992;
+  --gray-dark-3: #5b5e7e;
+  --gray-dark-4: #4d5067;
+  --gray-dark-5: #393a4b;
+  --gray-dark-6: #25273d;
+  --gray-dark-7: #171823;
+
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #3a7cfd;
+
+  --check-btn-bg: linear-gradient(rgb(85, 221, 255), rgb(192, 88, 243));
+  --main-bg: var(--gray-light-1);
+  --dark-main-bg: var(--gray-dark-7);
+  --todo-bg: var(--white);
+  --dark-todo-bg: var(--gray-dark-6);
+  --input-placeholder: var(--gray-light-4);
+  --dark-input-placeholder: var(--gray-dark-2);
+  --text: var(--gray-light-5);
+  --dark-text: var(--gray-dark-1);
+  --completed-todo: var(--gray-light-3);
+  --dark-completed-todo: var(--gray-dark-4);
+  --filters: var(--gray-light-4);
+  --dark-filters: var(--gray-dark-3);
+  --filters-hover: var(--gray-light-5);
+  --dark-filters-hover: var(--gray-light-2);
+  --clear: var(--gray-light-5);
+  --dark-clear: var(--gray-dark-3);
+  --checkbox: var(--gray-light-2);
+  --dark-checkbox: var(--gray-dark-5);
+  --input: var(--gray-dark-5);
+  --dark-input: var(--gray-dark-1);
+
+  --img-bg-1: 85, 150, 255;
+  --img-bg-2: 172, 45, 235;
+  --dark-img-bg-1: 55, 16, 189;
+  --dark-img-bg-2: 164, 35, 149;
+
+  --bg-img: url(/public/images/bg-mobile-light.jpg);
+  --dark-bg-img: url(/public/images/bg-mobile-dark.jpg);
+}
+
+body {
+}
+
+main {
+  background: var(--main-bg);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  height: 37.5%;
+  background: linear-gradient(
+      rgba(var(--img-bg-1), 0.25),
+      rgba(var(--img-bg-2), 0.25)
+    ),
+    var(--bg-img) center/cover no-repeat;
+}
+footer {
+  height: 62.5%;
+}
+
+.dark-theme {
+  --main-bg: var(--dark-main-bg);
+  --todo-bg: var(--dark-todo-bg);
+  --input-placeholder: var(--dark-input-placeholder);
+  --text: var(--dark-text);
+  --completed-todo: var(--dark-completed-todo);
+  --filters: var(--dark-filters);
+  --filters-hover: var(--dark-filters-hover);
+  --clear: var(--dark-clear);
+  --img-bg-1: var(--dark-img-bg-1);
+  --img-bg-2: var(--dark-img-bg-2);
+  --bg-img: var(--dark-bg-img);
+  --checkbox: var(--dark-checkbox);
+}
+
+/* RADIO BTN HOVER */
+/* 55DDFF */
+/* C058F3 */
+
+/* LIGHT THEME IMG BG */
+/* 5596FF */
+/* AC2DEB */
+
+/* DARK THEME IMG BG */
+/* 3710BD
+A42395 */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
